@@ -28,7 +28,7 @@ jobs:
         run: echo "${HOME}/.local/bin" >> $GITHUB_PATH
 
       - name: Install our libraries
-        run: poetry install --no-root -only-main
+        run: poetry install --no-root
 
       - name: run Tests
         run: poetry run pytest
